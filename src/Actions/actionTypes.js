@@ -1,0 +1,4 @@
+export const SET_NEW_MARKER = 'SET_NEW_MARKER'
+export const GET_ALL_MARKERS = 'GET_ALL_MARKERS'
+export const REMOVE_MARKER = 'REMOVE_MARKER'
+export const UPDATE_MARKER = 'UPDATE_MARKER'

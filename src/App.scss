@@ -1,0 +1,18 @@
+* {
+    font: {
+        family: sans-serif;
+        size: 19px;
+        weight: 100
+    }
+    color: #b1b1b1;
+    text-decoration: none;
+    letter-spacing: .8px;
+    outline: none;
+    transition: all .3s ease;
+}
+
+.container {
+    margin: auto;
+    max-width: 430px;
+    width: 100%;
+}

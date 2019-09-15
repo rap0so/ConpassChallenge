@@ -1,0 +1,30 @@
+.hotspot {
+    padding: 24px 5;
+    &-block {
+        width: calc(50% - 12px);
+        display: inline-block;
+    }
+}
+.wrapper- {
+    $deleteColor: #4e8ee9;
+    $nameColor: #b1b1b1;
+    &delete {
+        color: $deleteColor;
+        text-decoration: underline;
+        text-align: right;
+        cursor: pointer;
+        border: none;
+        background: none;
+        &:hover {
+            color: darken($deleteColor, 20%)
+        }
+    }
+    &name {
+        color: $nameColor;
+        cursor: pointer;
+        text-align: left;
+        &:hover {
+            color: darken($nameColor, 20%)
+        }
+    }
+}

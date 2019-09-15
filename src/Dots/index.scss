@@ -1,0 +1,77 @@
+$pingPonging: zoom-in-out .8s linear 0s infinite normal;
+$typeOfAnimation: all .25s ease-in-out;
+
+.wrapper-dot {
+    position: absolute;
+}
+.dot {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 0, 0, 0.61);
+    z-index: 10;
+    border-radius: 20px;
+    cursor: pointer;
+    animation-name: zoom;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.message-box{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 1px 1px 6px 2px #d6d6d6;
+    top: calc(100% + 40px);
+    position: absolute;
+    left: -180px;
+    border-radius: 10px;
+    z-index: 20;
+    text-align: left;
+    padding: 25px;
+}
+
+.wrapper-message-button {
+    text-align: center
+}
+.marker- {
+    &title {
+        color: #4a4a4a;
+        font-size: 19px;
+        margin: 0;
+    }
+    &description {
+        color: #a5a5a5;
+        font-size: 16px;
+        word-break: break-all;
+        line-height: 27px;
+    }
+    &success {
+        color: #07d664
+    }
+    &error {
+        color: #c50934
+    }
+}
+.wrapper-dot:focus, .wrapper-dot:active, .wrapper-dot:hover {
+    .message-box {
+        opacity: 1;
+        width: 350px;
+        height: 150px;
+        overflow-y: scroll
+    }
+}
+.message-box input, .message-box textarea {
+    max-width: 100%;
+    border: 0;
+    border-bottom: 1px solid #a7a7a7;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+@keyframes zoom {
+    0%   {transform: scale(1,1)}
+    50%  {transform: scale(1.2,1.2)}
+    100% {transform: scale(1,1)}
+}

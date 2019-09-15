@@ -1,0 +1,16 @@
+ul.hotspots {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+    li:not(.hotspots-header) {
+        border-bottom: 1px solid #ebebeb;
+        padding: 20px 5px
+    }
+}
+
+.hotspots-header {
+    padding: 8px 5px;
+    text-align: left;
+    color: #ababab;
+    background-color: #ebebeb;
+}
